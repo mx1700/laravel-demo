@@ -20,5 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/user', function () {
+    sleep(1);
    return Inertia::render('user');
 });
