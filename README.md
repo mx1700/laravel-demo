@@ -7,6 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## 安装
+```bash
+composer install --ignore-platform-reqs
+cp .env.example .env
+./sail up -d
+./sail key:generate
+./sail npm install
+./sail npm run hot
+```
+
+## 待解决问题
+1. 前后台压缩两个 js
+1. ts 支持
+1. [x]滚动条历史位置问题
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
